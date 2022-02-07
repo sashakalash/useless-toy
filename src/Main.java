@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Switcher switcher = new Switcher();
         User user = new User(switcher, "Пользователь", USER_ITERATION_COUNT);
-        Toy toy = new Toy(switcher, "Игрушка");
+        Toy toy = new Toy(switcher, "Кот");
 
         user.start();
         toy.start();

@@ -15,7 +15,7 @@ public class User extends Thread {
         while (proccessingCounter > 0) {
             try {
                 Thread.sleep(USER_ACTION_FREQUENCY);
-                switcher.state.set(true);
+                switcher.state = true;
                 System.out.printf("%s открыл коробку!\n", this.getName());
                 proccessingCounter--;
             } catch (InterruptedException e) {

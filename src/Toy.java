@@ -10,9 +10,9 @@ public class Toy extends Thread{
     @Override
     public void run() {
         while (true) {
-            if (switcher.state.get()) {
+            if (switcher.state) {
                 System.out.printf("%s закрыл коробку!\n", this.getName());
-                switcher.state.set(false);
+                switcher.state = false;
             }
         }
     }
