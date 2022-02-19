@@ -1,5 +1,5 @@
 public class User extends Thread {
-    Switcher switcher;
+    private Switcher switcher;
     private final int USER_ACTION_FREQUENCY = 3000;
     private int proccessingCounter;
 

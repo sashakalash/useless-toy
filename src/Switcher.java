@@ -1,3 +1,3 @@
 public class Switcher {
-    public static volatile boolean state = false;
+    public volatile boolean state = false;
 }

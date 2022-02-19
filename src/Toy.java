@@ -1,5 +1,5 @@
 public class Toy extends Thread{
-    Switcher switcher;
+    private Switcher switcher;
 
     public Toy(Switcher switcher, String title) {
         this.switcher = switcher;
